@@ -1,0 +1,9 @@
+language: java
+jdk:
+  - openjdk17
+
+# Usa il wrapper di Gradle per garantire la compatibilità della versione di Gradle
+install: ./gradlew assemble
+
+# Esegui i tuoi test
+script: ./gradlew check
